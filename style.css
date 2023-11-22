@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.Outer-Box {
+    width: 100%;
+    max-width: 540px;
+    background-color: #ffff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+#top-portion>h1 {
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+#top-portion {
+    display: flex;
+}
+
+#row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#search-button {
+    border: 0;
+    outline: 0;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+#input-box {
+    flex: 1;
+    border: none;
+    outline: 0;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    font-size: 15px;
+}
+
+#list-container li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+#list-container li::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/10914/10914625.png");
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+#notebook-icon {
+    height: 30px;
+    width: 30px;
+}
+
+#list-container .checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+#list-container .checked::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/1442/1442912.png");
+    background-size: cover;
+    background-position: center;
+    top: 10.45px;
+    left: 10.4px;
+}
+
+#list-container li span {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#list-container li span:hover {
+    background: #edeef0;
+}
